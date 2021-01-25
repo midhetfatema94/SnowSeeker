@@ -20,6 +20,7 @@
 		838FF5DC25BDCE07004EEB68 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FF5DB25BDCE07004EEB68 /* ResortDetailsView.swift */; };
 		838FF5DF25BED9B7004EEB68 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FF5DE25BED9B7004EEB68 /* Facility.swift */; };
 		838FF5E225BEE38A004EEB68 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FF5E125BEE38A004EEB68 /* Favourites.swift */; };
+		838FF5E525BEEE8D004EEB68 /* SortingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838FF5E425BEEE8D004EEB68 /* SortingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		838FF5DB25BDCE07004EEB68 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		838FF5DE25BED9B7004EEB68 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 		838FF5E125BEE38A004EEB68 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		838FF5E425BEEE8D004EEB68 /* SortingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				838FF5DE25BED9B7004EEB68 /* Facility.swift */,
 				838FF5DB25BDCE07004EEB68 /* ResortDetailsView.swift */,
 				838FF5D525BDC70F004EEB68 /* ResortView.swift */,
+				838FF5E425BEEE8D004EEB68 /* SortingView.swift */,
 				838FF5E125BEE38A004EEB68 /* Favourites.swift */,
 				838FF5D225BDC549004EEB68 /* WelcomeView.swift */,
 				838FF5C925BDB7FA004EEB68 /* resorts.json */,
@@ -175,6 +178,7 @@
 				838FF5CD25BDB860004EEB68 /* Resort.swift in Sources */,
 				838FF5D625BDC70F004EEB68 /* ResortView.swift in Sources */,
 				838FF5B825BAE89C004EEB68 /* SnowSeekerApp.swift in Sources */,
+				838FF5E525BEEE8D004EEB68 /* SortingView.swift in Sources */,
 				838FF5D025BDBA04004EEB68 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

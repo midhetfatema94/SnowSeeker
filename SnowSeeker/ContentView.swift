@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var favourites = Favourites()
+    @ObservedObject var allResorts = Resorts()
     
-    let resorts: [Resort] = Bundle.main.decode("resorts.json")
+    @State private var showingFilterPage = false
     
     var body: some View {
         NavigationView {
-            List(resorts) {resort in
+            List(allResorts.resorts) {resort in
                 NavigationLink(destination: ResortView(resort: resort)) {
                     Image(resort.country)
                         .resizable()
@@ -46,10 +47,20 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Resorts")
+            .navigationBarItems(trailing: Button(action: {
+                self.showingFilterPage = true
+                allResorts.resetFilters()
+            }, label: {
+                Text("Sort & Filter")
+            }))
+            .sheet(isPresented: $showingFilterPage, content: {
+                SortingView()
+            })
             
             WelcomeView()
         }
         .environmentObject(favourites)
+        .environmentObject(allResorts)
     }
 }
 
